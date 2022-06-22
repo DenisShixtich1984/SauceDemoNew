@@ -21,7 +21,7 @@ public class BaseTest {
     protected TwitterPage twitterPage;
     protected LoginSteps loginSteps;
 
-    @BeforeMethod (description = "Opening Browser")
+    @BeforeMethod (alwaysRun = true, description = "Opening Browser")
     public void setUp (ITestContext context) {
         System.out.println("---------------Before Method--------------");
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
