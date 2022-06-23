@@ -44,7 +44,7 @@ public class LoginPage extends BasePage {
     }
     @Step ("false message")
     public LoginPage checkFalseErrorMessage () {
-        AllureUtils.takeScreenshot(driver);
+    //    AllureUtils.takeScreenshot(driver);
         Assert.assertEquals(getErrorMessage(), "Eic sadface: Username and password do not match any user in this service");
         return this;
     }

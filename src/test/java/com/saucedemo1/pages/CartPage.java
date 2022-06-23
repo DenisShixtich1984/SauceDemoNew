@@ -44,7 +44,6 @@ public class CartPage extends BasePage {
 
     }
     public String getCheckThingInTheCart () {
-        AllureUtils.takeScreenshot(driver);
         return thingInCart.getText();
     }
     public String getCheckPriceInTheCart () {
