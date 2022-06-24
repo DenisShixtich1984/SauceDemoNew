@@ -47,17 +47,17 @@ public class TestCart extends BaseTest {
         cartPage.removeButton.click();
         Assert.assertEquals(cartPage.getCart(), "");
     }
-    @Test
-    @Description("broken test")
-    @TmsLink("SP-33")
-    public void testBroken() {
-        loginPage.openPage();
-        loginPage.loginWithStandardUser();
-        Assert.assertEquals(productsPage.getPageProdTitle(), "PRODUCTS");
-        productsPage.addToCartRedTShirt().pressCartButton();
-        cartPage.waitOpenAndCheckTShirt();
-        cartPage.isPageOpened();
-        Assert.assertEquals(cartPage.getCartTitle(), "YOUR CART");
-        Assert.assertEquals(cartPage.getCheckThingInTheCart(), "TTest.allTheThings() T-Shirt (Red)");
-    }
+//    @Test
+//    @Description("broken test")
+//    @TmsLink("SP-33")
+//    public void testBroken() {
+//        loginPage.openPage();
+//        loginPage.loginWithStandardUser();
+//        Assert.assertEquals(productsPage.getPageProdTitle(), "PRODUCTS");
+//        productsPage.addToCartRedTShirt().pressCartButton();
+//        cartPage.waitOpenAndCheckTShirt();
+//        cartPage.isPageOpened();
+//        Assert.assertEquals(cartPage.getCartTitle(), "YOUR CART");
+//        Assert.assertEquals(cartPage.getCheckThingInTheCart(), "TTest.allTheThings() T-Shirt (Red)");
+//    }
 }

@@ -70,15 +70,11 @@ public class TestLogin extends BaseTest{
         productsPage.waitOpenProductPage();
         Assert.assertEquals(productsPage.getPageProdTitle(), "PRODUCTS");
     }
-    @Test
-    @Description("user validation with true test's  mistake in expected")
-    @TmsLink("SP-3")
-    @Issue("14")
-    @Link("https://open.spotify.com/artist/5Rhvec15X3GXZGq52lEKt8")
-    public void testWrongLoginAndPasswordTrue() {
-        loginSteps.getFalseMessage();
+//    @Test
+//    @Description("user validation with true test's  mistake in expected")
+//    @TmsLink("SP-3")
+//    @Issue("14")
+//    @Link("https://open.spotify.com/artist/5Rhvec15X3GXZGq52lEKt8")
+//    public void testWrongLoginAndPasswordTrue() {
+//        loginSteps.getFalseMessage();
     }
-
-
-
-}

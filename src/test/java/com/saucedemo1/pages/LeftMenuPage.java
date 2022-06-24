@@ -38,7 +38,7 @@ public class LeftMenuPage extends BasePage {
         return this;
     }
     public void waitLeftMenuOpened() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOf(leftMenuLocator));
     }
 }

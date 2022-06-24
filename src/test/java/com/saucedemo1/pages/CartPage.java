@@ -58,11 +58,11 @@ public class CartPage extends BasePage {
     return new CheckOutPage(driver);
     }
     public void waitOpenCartPage() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOf(elementOfCart));
     }
     public void waitOpenAndCheckTShirt() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOf(elementInCart));
     }
 }

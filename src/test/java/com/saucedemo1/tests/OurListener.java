@@ -1,6 +1,7 @@
 package com.saucedemo1.tests;
 
 import com.saucedemo1.utils.AllureUtils;
+import io.qameta.allure.Attachment;
 import org.openqa.selenium.NoSuchSessionException;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
@@ -12,11 +13,13 @@ import java.util.concurrent.TimeUnit;
 public class OurListener implements ITestListener {
     public void onTestStart(ITestResult iTestResult) {
         System.out.println((String.format("======================================== STARTING TEST %s ========================================", iTestResult.getName())));
+        takeScreenshot(iTestResult);
     }
 
     public void onTestSuccess(ITestResult iTestResult) {
         System.out.println(String.format("======================================== FINISHED TEST %s Duration: %ss ========================================", iTestResult.getName(),
                 getExecutionTime(iTestResult)));
+        takeScreenshot(iTestResult);
     }
 
     public void onTestFailure(ITestResult iTestResult) {
@@ -31,6 +34,7 @@ public class OurListener implements ITestListener {
         takeScreenshot(iTestResult);
     }
 
+    @Attachment(value = "TestListenerScreenShoot", type = "image/png")
     private byte[] takeScreenshot(ITestResult iTestResult) {
         ITestContext context = iTestResult.getTestContext();
         try {

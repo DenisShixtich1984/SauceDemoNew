@@ -139,7 +139,7 @@ public class ProductsPage extends BasePage {
     }
     public String checkFaceBook () { return xFacebook.getText();}
     public void waitOpenProductPage() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+        WebDriverWait wait = new WebDriverWait(driver,10);
         wait.until(ExpectedConditions.visibilityOf(titleOfProduct));
     }
 }
