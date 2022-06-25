@@ -1,14 +1,14 @@
-package com.saucedemo1.tests;
-import io.qameta.allure.Description;
-import io.qameta.allure.Issue;
-import io.qameta.allure.Link;
-import io.qameta.allure.TmsLink;
-import org.apache.commons.lang3.RandomUtils;
-import org.testng.Assert;
-import org.testng.annotations.Ignore;
-import org.testng.annotations.Test;
-
-public class UnstableTest extends BaseTest{
+//package com.saucedemo1.tests;
+//import io.qameta.allure.Description;
+//import io.qameta.allure.Issue;
+//import io.qameta.allure.Link;
+//import io.qameta.allure.TmsLink;
+//import org.apache.commons.lang3.RandomUtils;
+//import org.testng.Assert;
+//import org.testng.annotations.Ignore;
+//import org.testng.annotations.Test;
+//
+//public class UnstableTest extends BaseTest{
 //    @Test (timeOut = 1000, retryAnalyzer = Retry.class)
 //    @Description("Unstable Test. Need to fix")
 //    @TmsLink("SP-28")
@@ -46,4 +46,4 @@ public class UnstableTest extends BaseTest{
 //        Assert.assertEquals(cartPage.getCart(), "");
 //        System.out.println("Retry = " + timeout);
 //    }
-}
+//}
