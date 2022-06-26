@@ -50,16 +50,16 @@ public class TestLogin extends BaseTest{
         loginPage.login("locked_out_user",loginPage.getUserPassword());
         Assert.assertEquals(loginPage.getErrorMessage(), "Epic sadface: Sorry, this user has been locked out.");
     }
-    @Test
-    @Description("user validation test")
-    @TmsLink("SP-5")
-    public void testProblemUserLoginAndStandardPassword() {
-        loginPage.openPage();
-        loginPage.isPageOpened();
-        loginPage.login("problem_user", loginPage.getUserPassword());
-        productsPage.waitOpenProductPage();
-        Assert.assertEquals(productsPage.getPageProdTitle(), "PRODUCTS");
-    }
+//    @Test
+//    @Description("user validation test")
+//    @TmsLink("SP-5")
+//    public void testProblemUserLoginAndStandardPassword() {
+//        loginPage.openPage();
+//        loginPage.isPageOpened();
+//        loginPage.login("problem_user", loginPage.getUserPassword());
+//        productsPage.waitOpenProductPage();
+//        Assert.assertEquals(productsPage.getPageProdTitle(), "PRODUCTS");
+//    }
     @Test
     @Description("user validation test")
     @TmsLink("SP-6")
